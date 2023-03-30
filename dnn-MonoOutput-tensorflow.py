@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 from keras.models import load_model, save_model
 from keras.callbacks import ModelCheckpoint
 import os
-os.chdir("C:/Users/royer/AppData/Roaming/MetaQuotes/Terminal/24F345EB9F291441AFE537834F9D8A19/MQL5/Include/Hedge_include")
+os.chdir("C:/Users/royer/AppData/Roaming/MetaQuotes/Terminal/.../MQL5/Include/Hedge_include")
 from RFECV import RFECV_RandomForest
 
 
@@ -158,11 +158,11 @@ def neuronalNetwork(Train, data, new_name_file, old_name_file, epoch, day_window
     #EarlyStopping = tf.keras.callbacks.EarlyStopping(monitor='val_loss', min_delta=0.003, patience=2, verbose=1, mode='auto', baseline=0.1)
 
     if old_name_file != None and old_name_file != " " :
-        old_filepath = f'C:/Users/royer/AppData/Roaming/MetaQuotes/Terminal/24F345EB9F291441AFE537834F9D8A19/MQL5/Include/Hedge_include/saved_best_models/MonoOutput/{old_name_file}'
+        old_filepath = f'C:/Users/royer/AppData/Roaming/MetaQuotes/Terminal/.../MQL5/Include/Hedge_include/saved_best_models/MonoOutput/{old_name_file}'
         model = load_model(old_filepath)
 
     if Train:
-        new_filepath = f'C:/Users/royer/AppData/Roaming/MetaQuotes/Terminal/24F345EB9F291441AFE537834F9D8A19/MQL5/Include/Hedge_include/saved_best_models/MonoOutput/{new_name_file}'
+        new_filepath = f'C:/Users/royer/AppData/Roaming/MetaQuotes/Terminal/.../MQL5/Include/Hedge_include/saved_best_models/MonoOutput/{new_name_file}'
         model.fit(x_train, y_train, batch_size= 1, epochs=epoch, verbose=1)
         save_model(model,new_filepath)
 
