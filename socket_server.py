@@ -1,7 +1,7 @@
 import socket, numpy as np
 from sklearn.linear_model import LinearRegression
 import os
-os.chdir("C:/Users/royer/AppData\/Roaming/MetaQuotes/Terminal/24F345EB9F291441AFE537834F9D8A19/MQL5/Include/Hedge_include")
+os.chdir("C:/Users/royer/AppData\/Roaming/MetaQuotes/Terminal/.../MQL5/Include/Hedge_include")
 #from dnn-tensorflow import neuronalNetwork
 
 ##Class & fonction
