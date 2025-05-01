@@ -45,7 +45,7 @@ This project is a complete algorithmic trading system combining MetaTrader 5 (MQ
 
 ### 📈 MQL5 (Data Acquisition & Indicator Engine)
 
-- **`main.mqh`**  
+- **`main.mq5`**  
   Main entry point for the MQL5 script.  
   - Collects market data for specified dates/times.  
   - Computes technical indicators.  
